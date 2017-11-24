@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+}
+html{
+    font-size:100px;
+    width:100%;
+    height:100%;
+}
+body{
+    font-size:16px;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+@media screen and (min-width:375px){    /*and后面必须有空格*/
+    html{
+        font-size:50px;
+    }
+}
+    /*背景+遮罩*/
+.bg{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.bg img{
+    width:100%;
+    height:100%;
+}
+.mask{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.4);
+}
+/*头部*/
+.header{
+    width:100%;
+    height:1rem;
+    position:absolute;
+    left:0;
+    top:0.5rem;
+}
+.h-left{
+    width:1rem;
+    line-height:1rem;
+    text-align:center;
+    font-size:.4rem;
+    font-weight:900;
+    float:left;
+}
+.h-middle{
+    width:75%;
+    line-height:1rem;
+    text-align:center;
+    font-size:.5rem;
+    font-weight:900;
+    float:left;
+}
+    /*内容开始*/
+.nrbox{
+    width:90%;
+    height:10rem;
+    background:rgba(0,0,0,0.6);
+    position:absolute;
+    left:0;
+    right:0;
+    top:1rem;
+    bottom:0;
+    margin:auto;
+}
+.n-top{
+    width:100%;
+    height:7rem;
+    padding-top:.1rem;
+    background:rgba(255,255,255,0.4);
+}
+.n-temp{
+    margin-left:.8rem;
+    line-height:1.2rem;
+    text-align: center;
+    font-size:1rem;
+    font-weight:bold;
+    color:#fff;
+    margin-top:.5rem;
+}
+.n-city{
+    lint-height:1rem;
+    text-align:center;
+    font-size:.4rem;
+    font-weight:900;
+    color:#fff;
+    margin-top:.25rem;
+}
+.n-weather{
+    width:100%;
+    line-height:1.2rem;
+    text-align:center;
+    margin-top:.5rem;
+    position:relative;
+}
+/*.n-w-img{*/
+    /*width:1rem;*/
+    /*height:1rem;*/
+    /*position:absolute;*/
+    /*left:1.4rem;*/
+    /*top:.08rem;*/
+/*}*/
+.n-weather .n-w{
+    width:100%;
+    line-height:1.2rem;
+    font-size:.42rem;
+    color:#fff;
+}
+.n-top-lisi{
+    width:100%;
+    height:2.2rem;
+    margin-top:.5rem;
+}
+.n-top-lisi .n-top-lie{
+    width:30%;
+    height:2.2rem;
+    float:left;
+    margin:0 0.1rem;
+}
+.n-top-lie .wind-zhi{
+    line-height:.8rem;
+    text-align:center;
+    font-size:.42rem;
+    color:#000;
+    margin-top:.2rem;
+}
+.n-top-lie .wind{
+    line-height:1rem;
+    text-align:center;
+    font-size:.4rem;
+    color:#000;
+    margin-top:.1rem;
+}
+.wind-li,.wind-qi{
+    line-height:.8rem;
+    text-align:center;
+    font-size:.42rem;
+    color:#000;
+    margin-top:.2rem;
+}
+    /*内容底部*/
+.n-bottom{
+    width:100%;
+    height:3rem;
+    margin-top:.12rem;
+}
+.daily{
+    width:16%;
+    height:3rem;
+    margin:0 .02rem;
+    float:left;
+}
+.daily .date{
+    line-height:.5rem;
+    text-align:center;
+    color:#fff;
+    margin-top:.1rem;
+    font-size:.2rem;
+}
+.daily .imgbox{
+    width:1rem;
+    height:1rem;
+    margin:.2rem auto;
+}
+.imgbox img{
+    width:1rem;
+    height:1rem;
+}
+.daily .temp{
+    line-height:.8rem;
+    text-align:center;
+    margin-left:.3rem;
+    color:#fff;
+    margin-top:.2rem;
+    font-size:.4rem;
+}
+/*省份*/
+.city-cover{
+    display: none;
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.city-cover .return{
+    width: 100%;
+    height: 1rem;
+    color:#fff;
+    border-bottom: 1px solid #ccc;
+    line-height:1rem;
+    font-size: .6rem;
+    text-indent: .8em;
+}
+.province{
+    width:30%;
+    height:100%;
+    color: #ccc;
+    float: left;
+    font-size: .4rem;
+    border-right: 1px solid #ccc;
+    overflow: scroll;
+}
+.city-cover li{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.city{
+    float:left;
+    width: 70%;
+    height:100%;
+    overflow:scroll;
+}
+.city ul li{
+    width:100%;
+    height:1rem;
+    line-height: 1rem;
+    text-align: center;
+    color:#fff;
+    font-size: .4rem;
+}
